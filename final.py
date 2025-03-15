@@ -19,7 +19,7 @@ def setup_clients():
         api_key=os.getenv('OPENAI_API_KEY')
     )
     pc = Pinecone(
-        api_key="pcsk_28oaCA_EprsTrhH2LrKSMQ4MK66KhgpmxTqVopVDAyW6uHmXu5MPt1jnQTVn1YXfpuxXhn")
+        api_key="")
     index = pc.Index("badminton")
 
     return client, index
